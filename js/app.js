@@ -20,7 +20,7 @@ var alreadyGuessed = [];
           alreadyGuessed = [];
           $("#guessButton").prop("disabled", false);
           var magicNumber = parseInt(Math.random() * 100, 10);
-          alert(magicNumber);
+          //alert(magicNumber);
 
           $("form").off("submit").submit(function(e) {
               // Prevent submission.
