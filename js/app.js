@@ -46,9 +46,8 @@ var alreadyGuessed = [];
                   } else if (curNum > 100) {
                       alert("This is too big, try again");
                   } else {
-                      // Tell Hot or Cold.
-                      // If the difference is within 10, it is hot.
-                      // Else it is cold.
+                      // Tell Hot or Cold, warm, very warm, or ice cold depending on range
+                      // Else it is very cold
                       if (Math.abs(magicNumber - curNum) <= 10)
                           stat = "hot";
                       else if (Math.abs(magicNumber - curNum) <= 20)
@@ -67,6 +66,4 @@ var alreadyGuessed = [];
 
           });
       }
-// cannot click new game until this one is finished
-// once first game is over, new game is clicked, but cannot enter any input
 
